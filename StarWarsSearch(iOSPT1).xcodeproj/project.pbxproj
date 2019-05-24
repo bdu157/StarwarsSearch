@@ -12,6 +12,9 @@
 		0B49C1172297822300112967 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B49C1162297822300112967 /* Assets.xcassets */; };
 		0B49C11A2297822300112967 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B49C1182297822300112967 /* LaunchScreen.storyboard */; };
 		0B49C1222297848400112967 /* StarWarsSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B49C1212297848400112967 /* StarWarsSearchTableViewController.swift */; };
+		0B49C125229785AD00112967 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B49C124229785AD00112967 /* PersonTableViewCell.swift */; };
+		0B49C128229786F700112967 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B49C127229786F700112967 /* Person.swift */; };
+		0B49C12B2297871000112967 /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B49C12A2297871000112967 /* PersonController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		0B49C1192297822300112967 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B49C11B2297822300112967 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B49C1212297848400112967 /* StarWarsSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsSearchTableViewController.swift; sourceTree = "<group>"; };
+		0B49C124229785AD00112967 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
+		0B49C127229786F700112967 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		0B49C12A2297871000112967 /* PersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +60,15 @@
 		0B49C10E2297822000112967 /* StarWarsSearch(iOSPT1) */ = {
 			isa = PBXGroup;
 			children = (
+				0B49C126229785B500112967 /* Views */,
 				0B49C10F2297822000112967 /* AppDelegate.swift */,
 				0B49C1132297822000112967 /* Main.storyboard */,
 				0B49C1162297822300112967 /* Assets.xcassets */,
 				0B49C1182297822300112967 /* LaunchScreen.storyboard */,
 				0B49C11B2297822300112967 /* Info.plist */,
 				0B49C1232297849000112967 /* ViewController */,
+				0B49C129229786FD00112967 /* Models */,
+				0B49C12C2297871600112967 /* Controllers */,
 			);
 			path = "StarWarsSearch(iOSPT1)";
 			sourceTree = "<group>";
@@ -70,6 +79,30 @@
 				0B49C1212297848400112967 /* StarWarsSearchTableViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		0B49C126229785B500112967 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0B49C124229785AD00112967 /* PersonTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0B49C129229786FD00112967 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0B49C127229786F700112967 /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0B49C12C2297871600112967 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0B49C12A2297871000112967 /* PersonController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,7 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B49C125229785AD00112967 /* PersonTableViewCell.swift in Sources */,
 				0B49C1222297848400112967 /* StarWarsSearchTableViewController.swift in Sources */,
+				0B49C128229786F700112967 /* Person.swift in Sources */,
+				0B49C12B2297871000112967 /* PersonController.swift in Sources */,
 				0B49C1102297822000112967 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

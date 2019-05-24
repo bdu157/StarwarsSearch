@@ -10,15 +10,24 @@ import UIKit
 
 class PersonTableViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    var person: Person? {
+        didSet {
+            self.updateViews()
+        }
     }
+    
+    @IBOutlet weak var personLabel: UILabel!
+    
+    @IBOutlet weak var genderLabel: UILabel!
+    
+    @IBOutlet weak var birthYearLabel: UILabel!
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    private func updateViews() {
+        guard let person =  self.person else {return}
+            self.personLabel.text = person.name
+        self.genderLabel.text = "Gender: \(person.gender)"
+        self.birthYearLabel.text = "Birth Year: \(person.birthYear)"
     }
-
+    
 }
