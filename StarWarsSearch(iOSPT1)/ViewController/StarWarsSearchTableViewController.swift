@@ -23,7 +23,7 @@ class StarWarsSearchTableViewController: UITableViewController, UISearchBarDeleg
 
     }
 
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {     // this is through UISearchBar protocol above and we call DispatchQueue.main.async here because we are bringing JSON data when clicking this search bar so this UIKit classes and methods should be called in main queue like we did below
         guard let searchTerm = self.searchBar.text else {return}
         
         self.personController.searchForPeopleWith(searchTerm: searchTerm) {

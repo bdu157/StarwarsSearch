@@ -16,7 +16,8 @@ struct Person: Decodable {
     
 }
 
-// we give this becuase name/gender/birthYear are inside of Results
+// we give this becuase name/gender/birthYear are inside of Results array
 struct PersonSearch: Decodable {
     let results: [Person]
 }
+
